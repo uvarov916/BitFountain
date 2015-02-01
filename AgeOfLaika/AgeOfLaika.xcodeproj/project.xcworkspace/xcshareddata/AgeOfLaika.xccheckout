@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ED04BD49-EEA5-472A-9551-2EB4D7C89D2B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AgeOfLaika</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9E7E5446587A2E63D9D09514A36B079695363FF5</key>
+		<string>github.com:uvarovis/BitFountain.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AgeOfLaika/AgeOfLaika.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9E7E5446587A2E63D9D09514A36B079695363FF5</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:uvarovis/BitFountain.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9E7E5446587A2E63D9D09514A36B079695363FF5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9E7E5446587A2E63D9D09514A36B079695363FF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BitFountain</string>
+		</dict>
+	</array>
+</dict>
+</plist>
