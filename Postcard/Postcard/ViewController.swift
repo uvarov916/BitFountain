@@ -25,7 +25,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // Code will evaluate when we press a button
     @IBAction func sendMailButtonPressed(sender: UIButton) {
+        
         // Dark grey color for label text
         let darkGreyColor: UIColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
         
