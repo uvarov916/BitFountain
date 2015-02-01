@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var enterNameTextField: UITextField!
     @IBOutlet weak var enterMessageTextField: UITextField!
@@ -17,7 +18,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        nameLabel.hidden = true
+        messageLabel.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,16 +32,22 @@ class ViewController: UIViewController {
     @IBAction func sendMailButtonPressed(sender: UIButton) {
         
         // Dark grey color for label text
+        let lightkGreyColor: UIColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 1.0)
         let darkGreyColor: UIColor = UIColor(red: 0.3, green: 0.3, blue: 0.3, alpha: 1.0)
         
         // Updating content of the label and unhiding it
         messageLabel.text = enterMessageTextField.text
-        messageLabel.textColor = darkGreyColor
+        messageLabel.textColor = lightkGreyColor
         messageLabel.hidden = false
+        
+        nameLabel.text = enterNameTextField.text
+        nameLabel.textColor = darkGreyColor
+        nameLabel.hidden = false
         
         // Cleaning text fields and hidding keyboard
         enterMessageTextField.text = nil
         enterNameTextField.text = nil
+        enterNameTextField.resignFirstResponder()
         enterMessageTextField.resignFirstResponder()
         
         // Change button text

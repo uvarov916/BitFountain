@@ -71,7 +71,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="47" y="229" width="281" height="30"/>
+                                    <rect key="frame" x="47" y="266" width="281" height="30"/>
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Message" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="0hW-dC-XJY">
@@ -79,17 +79,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="47" y="267" width="281" height="30"/>
+                                    <rect key="frame" x="47" y="304" width="281" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oua-b4-roF">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="47" y="103" width="281" height="92"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgI-Py-xxU">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.47755823829999999" green="0.74221322329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -99,12 +91,29 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="47" y="319" width="281" height="30"/>
+                                    <rect key="frame" x="47" y="356" width="281" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYK-Es-ofm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oua-b4-roF">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="153" width="281" height="92"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ri-mO-D8X">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="104" width="281" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -112,8 +121,9 @@
                                 <exclude reference="fr2-CP-Wkq"/>
                                 <exclude reference="fMq-YD-2Dz"/>
                                 <exclude reference="0hW-dC-XJY"/>
-                                <exclude reference="oua-b4-roF"/>
                                 <exclude reference="dgI-Py-xxU"/>
+                                <exclude reference="oua-b4-roF"/>
+                                <exclude reference="6ri-mO-D8X"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -121,8 +131,9 @@
                                 <include reference="fr2-CP-Wkq"/>
                                 <include reference="fMq-YD-2Dz"/>
                                 <include reference="0hW-dC-XJY"/>
-                                <include reference="oua-b4-roF"/>
                                 <include reference="dgI-Py-xxU"/>
+                                <include reference="oua-b4-roF"/>
+                                <include reference="6ri-mO-D8X"/>
                             </mask>
                         </variation>
                     </view>
@@ -132,6 +143,7 @@
                         <outlet property="enterMessageTextField" destination="0hW-dC-XJY" id="RPH-Tn-JJs"/>
                         <outlet property="enterNameTextField" destination="fMq-YD-2Dz" id="Fm8-2Z-bBt"/>
                         <outlet property="messageLabel" destination="oua-b4-roF" id="uu6-RX-XmK"/>
+                        <outlet property="nameLabel" destination="6ri-mO-D8X" id="anh-kS-Wcc"/>
                         <outlet property="sendMailButton" destination="dgI-Py-xxU" id="sR4-Ba-Pai"/>
                     </connections>
                 </viewController>
