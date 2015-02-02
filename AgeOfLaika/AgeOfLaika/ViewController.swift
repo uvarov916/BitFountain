@@ -38,5 +38,31 @@ class ViewController: UIViewController {
         humanYearsTextField.resignFirstResponder()
     }
 
+    @IBAction func convertToRealDogYearsButtonPressed(sender: UIButton) {
+        
+        let yearsBeforeTwo = 10.5
+        let yearsAfterTwo = 4
+        let humanYearsNumber = humanYearsTextField.text.toInt()
+
+        if humanYearsNumber != nil {
+            let humanYearsNumberUnwrapped = humanYearsNumber!
+            var dogYears:Double = 0
+            
+            if humanYearsNumberUnwrapped < 3 {
+                dogYears = yearsBeforeTwo * Double(humanYearsNumberUnwrapped)
+            }
+            else {
+                dogYears = yearsBeforeTwo * Double(2) + Double((humanYearsNumberUnwrapped - 2) * 4)
+            }
+            
+            dogYearsLabel.text = "\(dogYears)"
+        }
+        else {
+            dogYearsLabel.text = "Please, enter a valid number"
+        }
+        
+        dogYearsLabel.hidden = false
+        humanYearsTextField.resignFirstResponder()
+    }
 }
 
